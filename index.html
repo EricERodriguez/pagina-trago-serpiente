@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veneno de Serpiente</title>
+    <link rel="icon" type="image/png" href="favico.webp" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header {
+        text-align: center;
+        padding: 20px;
+      }
+
+      header h1 {
+        color: limegreen;
+        font-size: 3em;
+      }
+
+      .image-container {
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        animation: fadeIn 3s ease-in-out;
+      }
+
+      .cocktail-image-container {
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      .image-container img {
+        max-width: 90%;
+        height: auto;
+        border: 5px solid limegreen;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .image-container img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px limegreen;
+      }
+
+      .cocktail-image-container img {
+        max-width: 80%; /* Limita el ancho máximo de las imágenes */
+        height: auto;
+        border: 5px solid limegreen;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .cocktail-image-container img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px limegreen;
+      }
+
+      .story,
+      .recipe {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .story h2,
+      .recipe h2 {
+        color: limegreen;
+      }
+
+      .recipe ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .recipe ul li {
+        margin: 5px 0;
+      }
+
+      .creator {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 40px 0;
+      }
+
+      .creator img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        border: 3px solid limegreen;
+        margin-bottom: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .creator img:hover {
+        transform: rotate(10deg) scale(1.1);
+        box-shadow: 0 0 15px limegreen;
+      }
+
+      footer {
+        padding: 10px;
+        background-color: #222;
+        color: limegreen;
+        text-align: center;
+        width: 100%;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Veneno de Serpiente</h1>
+    </header>
+
+    <div class="image-container">
+      <img src="snake.webp" alt="Veneno de Serpiente" />
+    </div>
+
+    <section class="story">
+      <h2>La leyenda del Veneno</h2>
+      <p>
+        En las profundidades de la jungla, un antiguo alquimista descubrió los
+        secretos del "Veneno de Serpiente". Este cóctel vibrante combina la
+        esencia refrescante de la manzana verde con un toque de peligro,
+        simulando el potente veneno que alguna vez usaron las tribus para
+        defender su tierra. Un trago que representa el equilibrio entre lo dulce
+        y lo mortal, destinado a los más valientes.
+      </p>
+    </section>
+
+    <!-- Imagen del Veneno -->
+    <div class="cocktail-image-container">
+      <img src="veneno.webp" alt="Veneno de Serpiente" />
+    </div>
+
+    <section class="recipe">
+      <h2>Ingredientes y Preparación: Veneno de Serpiente</h2>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>60 ml de tequila blanco</li>
+        <li>30 ml de licor de manzana verde</li>
+        <li>30 ml de jugo de limón fresco</li>
+        <li>15 ml de almibar</li>
+        <li>Hielo</li>
+        <li>Colorante rojo (para decorar)</li>
+        <li>Sal (para escarchar)</li>
+      </ul>
+      <h3>Decoración:</h3>
+      <p>
+        Rodaja de limon con líneas rojas y gotas de colorante rojo en la
+        superficie.
+      </p>
+      <h3>Preparación:</h3>
+      <p>
+        Escarcha el borde de una copa con sal. Mezcla los ingredientes en una
+        coctelera con hielo, agita bien y sirve en la copa preparada. Decora con
+        el limon y el colorante.
+      </p>
+    </section>
+
+    <!-- Imagen del Antídoto -->
+    <div class="cocktail-image-container">
+      <img src="antidoto.webp" alt="El Antídoto" />
+    </div>
+
+    <section class="recipe">
+      <h2>Ingredientes y Preparación: El Antídoto</h2>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>30 ml de licor de durazno (Peach Schnapps o similar)</li>
+        <li>10 ml de licor de limón o Triple Sec o esperidina</li>
+        <li>20 ml de jugo de naranja fresco</li>
+        <li>Hielo</li>
+        <li>Una hojita de menta (para decorar)</li>
+      </ul>
+      <h3>Decoración:</h3>
+      <p>
+        Hojita de menta fresca y una jeringa en representación del antidoto.
+      </p>
+      <h3>Preparación:</h3>
+      <p>
+        Mezcla todos los ingredientes en una coctelera con hielo, agita bien y
+        sirve en un vaso de shot. Decora con la hojita de menta y la jeringa.
+        Este pequeño shot es la clave para neutralizar el "Veneno de Serpiente".
+      </p>
+    </section>
+
+    <section class="story">
+      <h2>La leyenda del Antídoto</h2>
+      <p>
+        Según la leyenda, solo un antiguo clan tenía acceso al "Antídoto", una
+        mezcla secreta que contrarrestaba los efectos del veneno más letal. Se
+        dice que su color dorado simboliza la esperanza, mientras que su
+        frescura revitaliza el alma. Solo los más valientes se atreven a
+        enfrentarse al veneno, sabiendo que el antídoto siempre debe tomarse al
+        final, como símbolo de supervivencia.
+      </p>
+    </section>
+
+    <section class="creator">
+      <img src="Eric.jpg" alt="Creador del Veneno de Serpiente y El Antídoto" />
+      <h3>El Creador</h3>
+      <p>
+        Eric, un apasionado estudiante de cocteleria y narrador de historias,
+        creó el "Veneno de Serpiente" y su complemento, "El Antídoto", para
+        representar la lucha eterna entre el peligro y la salvación. Cada trago
+        cuenta una historia, y cada historia, un desafío.
+      </p>
+    </section>
+
+    <footer>2024 Veneno de Serpiente. Ambar Academy.</footer>
+  </body>
+</html>
